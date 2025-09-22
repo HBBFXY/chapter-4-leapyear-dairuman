@@ -1,10 +1,10 @@
 try:
-    year = eval(input("请输入年份："))
+    year_input = input()
+    year = int(year_input)
     if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
         print(f"{year} 年是闰年")
-    elif:
+    else:
         print(f"{year} 年不是闰年")
 except ValueError:
-    print("输入的年份含有非数字字符，请输入正确的年份数字")
-finally:
-    print("程序执行完毕")
+    print("输入错误")
+    
